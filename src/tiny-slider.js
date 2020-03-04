@@ -1139,7 +1139,7 @@ export var tns = function(options) {
 
     if (touch) { addEvents(container, touchEvents, options.preventScrollOnTouch); }
     if (mouseDrag) { addEvents(container, dragEvents); }
-    if (arrowKeys) { addEvents(doc, docmentKeydownEvent); }
+    if (arrowKeys) { addEvents(container, docmentKeydownEvent); }
 
     if (nested === 'inner') {
       events.on('outerResized', function () {
